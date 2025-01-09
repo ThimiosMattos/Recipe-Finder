@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receptsökare</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        main {
+            padding: 2rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 2rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        .search-bar {
+            margin-top: 1rem;
+        }
+        .search-bar input {
+            width: 100%;
+            padding: 0.5rem;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .search-bar button {
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            color: white;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .search-bar button:hover {
+            background-color: #45a049;
+        }
+        .recipe {
+            margin-top: 1rem;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Receptsökare</h1>
+        <nav>
+            <a href="index.html">Hem</a>
+            <a href="about.html">Om Oss</a>
+            <a href="submit.html">Skicka förslag</a>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Välkommen till Receptsökare</h1>
+            <p>Hitta det perfekta receptet baserat på de ingredienser du har!</p>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Ange ingredienser (t.ex. kyckling, ris, broccoli)">
+                <button onclick="searchRecipes()">Sök recept</button>
+            </div>
+            <div id="results"></div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
